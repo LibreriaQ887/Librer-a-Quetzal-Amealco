@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+  <link rel="stylesheet" href="redes.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Broadway', sans-serif;
+      position: relative;
+    }
+    
+    header {
+      background: #d77a53;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #e2a57f;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a nuestras redes sociales</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="libreria.html"><img src="./img/salir.svg" alt="salir"></a></li>
+      <li><a href="https://www.facebook.com/people/Librer%C3%ADa-Quetzal-Amealco/100028989115494/#" target="_blank"><img src="./img/Facebook.svg" alt="Facebook"></a></li>
+      <li><a href="https://www.instagram.com/libreriaquetzalamealco?igsh=djVtM20xcnUzc3Vo" target="_blank"><img src="./img/instagram.svg" alt="instagram"></a></li>
+      <li><a href="#" id="registroBtn"><img src="./img/usuario.svg" alt="Registrarse"></a></li>
+       <div id="registroPopupContainer">
+    <div id="registroPopupContainer">
+    <div id="registroFormulario" class="registro-popup">
+        <h2>Únete a la Comunidad Literaria</h2>
+        <p>Regístrate con tu correo para recibir novedades y responder preguntas.</p>
+        <form id="formularioRegistro">
+            <input type="email" id="correoUsuario" placeholder="Escribe tu correo aquí" required>
+            <button type="submit">Registrarme</button>
+        </form>
+    </div>
+</div>
+
+</div>
+
+       
+
+    </ul>
+  </nav>
+  <main>
+    <p>¡Síguenos en nuestras redes sociales para estar al tanto de nuestras novedades y promociones!</p>
+  </main>
+
+ <script>
+    document.getElementById("registroBtn").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("registroFormulario").style.display = "block";
+        document.getElementById("registroPopupContainer").style.display = "block";
+    });
+
+    document.getElementById("registroFormulario").addEventListener("mouseleave", function() {
+        document.getElementById("registroFormulario").style.display = "none";
+        document.getElementById("registroPopupContainer").style.display = "none";
+    });
+</script>
+
+<section id="comentarios" style="display: none;">
+    <h2>💬 Comentarios de la comunidad</h2>
+    <div id="contenedorComentarios"></div>
+    
+    <h3>📝 Escribe tu comentario:</h3>
+    <form id="formularioComentario">
+        <input type="text" id="nombreUsuario" placeholder="Tu nombre" required>
+        <textarea id="comentarioTexto" placeholder="Escribe aquí..." required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+
+<button id="cerrarSesion">Cerrar Sesión</button>
+ 
+
+<script src="comentarios.js"></script>
+
+<script src="registro.js"></script>
+
+</body>
+</html>

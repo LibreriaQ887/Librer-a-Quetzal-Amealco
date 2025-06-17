@@ -1,0 +1,261 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff; 
+    color: #3a3a3a; 
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #d77a53; 
+    color: #ffffff; 
+}
+
+header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    letter-spacing: 2px; 
+}
+
+.logo {
+    position: absolute;
+    top: 4px;
+    right: 20px; 
+    width: 200px;
+    height: auto;
+}
+
+
+nav ul {
+    font-family: 'MV Boli', serif;
+    font-size: 23px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7c4a34; 
+    font-weight: bold;
+}
+
+.banner{
+    padding: 3%;
+    background-image: url("./img/fondo.jpg");
+    background-size: cover;
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    text-align: center;
+    color: #5e2402; 
+}
+
+.catalogo .libros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.catalogo h2 {
+    font-family: 'Forte', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #542e20; 
+    padding-top: 80px; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #8b5e34; 
+    display: inline-block;
+}
+
+
+.libro {
+    background: #e2a57f;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(210, 180, 140, 0.7);
+    width: 250px; 
+    height: 485px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.libro img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.libro p {
+    flex-grow: 1;
+    font-size: 20px;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    color: #542e20;
+}
+
+.libro button {
+    margin-top: auto;
+}
+
+
+
+.libro:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.promo {
+    background: #fde7be;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 50px;
+}
+
+.promo h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #000000;
+}
+
+.promo p {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8b5e34;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6a3f28;
+
+}
+
+.detalles {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(247, 192, 111);
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    min-height: 300px;
+    padding: 15px;
+    border-radius: 10px; 
+    box-shadow: 0px 6px 10px rgb(250, 193, 118);
+    text-align: center;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+
+.detalles-contenedor {
+    background-color: #fdf6e3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px; 
+}
+
+.detalles-img {
+    width: 50px; 
+    height: auto;
+    border-radius: 5px; 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1px;
+}
+
+.info h3 {
+    font-size: 22px;
+    color: #8b5e34;
+}
+
+.info p {
+    font-size: 17px;
+    color: #542e20;
+}
+
+.detalles button {
+    padding: 10px 15px;
+    background-color: #8b5e34;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.detalles button:hover {
+    background-color: #6a3f28;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.categoria {
+    background-color: #e9ad81;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.categoria-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'MV Boli', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #8b5e34;
+}

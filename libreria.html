@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Quetzal</title>
+    <link rel="shortcut icon" href="./img/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="libreria.css">
+</head>
+<body>
+    <header>
+     <h1>Bienvenido a Librería Quetzal</h1>
+     <img src="./img/LogoC.png" alt="Logo Librería Quetzal" class="logo">
+    </header>
+    <nav>
+       <ul>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="https://maps.app.goo.gl/cvwMZyCmy6abARa77" target="_blank">Dirección</a></li>
+            <li><a href="redesSociales.html">Redes sociales y comentarios</a></li>
+        </ul>
+    </nav>
+    
+    <section class="banner">
+        <h4><font face= "Comic Sans MS">Regala imaginacion, universos, aventuras, culturas</Font> </h4>
+        
+    </section>
+
+    <section id="catalogo" class="catalogo">
+    <h2>Nuestro Catálogo</h2>
+    <div class="libros">
+
+
+    <div class="fila">
+        
+        <div class="libro">
+         <img src="./img/cosasbuenas2.jpg" alt="cosasbuenas2">
+         <p><strong>Como hacer que te pasen cosas buenas</strong></p>
+         <button onclick="mostrarDetalles('detalles1')">Ver Detalles</button>
+         <div id="detalles1" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/cosasbuenas2.jpg" alt="cosasbuenas2" class="detalles-img">
+                 <div class="info">
+                     <h3>Como hacer que te pasen cosas buenas</h3>
+                     <p><strong>Autor:</strong>Marian Rojas Estapé</p>
+                     <p><strong>Precio:</strong> $295 MXN</p>
+                     <button onclick="cerrarDetalles('detalles1')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+
+     <p>
+        <br>
+
+     <div class="libro">
+         <img src="./img/Alas de sangre.jpg" alt="Alas de sangre">
+         <p><strong>Alas de sangre</strong></p>
+         <button onclick="mostrarDetalles('detalles2')">Ver Detalles</button>
+
+         <div id="detalles2" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/Alas de sangre.jpg" alt="Alas de sangre" class="detalles-img">
+                 <div class="info">
+                     <h3>Alas de sangre</h3>
+                     <p><strong>Autor:</strong>Rebecca Yarros</p>
+                     <p><strong>Precio:</strong> $439 MXN</p>
+                     <button onclick="cerrarDetalles('detalles2')">Cerrar</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </div>
+    
+    <div class="fila">
+       <div class="libro">
+         <img src="./img/Cuando no queden mas estrellas.jpg" alt="Cunado no queden mas estrellas">
+         <p><strong>Cuando no queden mas estrellas que contar</strong></p>
+         <button onclick="mostrarDetalles('detalles3')">Ver Detalles</button>
+         <div id="detalles3" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/Cuando no queden mas estrellas.jpg" alt="Cunado no queden mas estrellas" class="detalles-img">
+                 <div class="info">
+                     <h3>Cuando no queden mas estrellas que contar</h3>
+                     <p><strong>Autor:</strong>María Martínez</p>
+                     <p><strong>Precio:</strong> $439 MXN</p>
+                     <button onclick="cerrarDetalles('detalles3')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+        
+        <p>
+        <br>
+
+        <div class="libro">
+         <img src="./img/El diario de Ana Frank.jpg" alt="El diario de Ana Frank">
+         <p><strong>El diario de Ana Frank</strong></p>
+         <button onclick="mostrarDetalles('detalles4')">Ver Detalles</button>
+         <div id="detalles4" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/El diario de Ana Frank.jpg" alt="El diario de Ana Frank" class="detalles-img">
+                 <div class="info">
+                     <h3>El diario de Ana Frank</h3>
+                     <p><strong>Autor:</strong>Ana Frank</p>
+                     <p><strong>Precio:</strong> $85 MXN</p>
+                     <button onclick="cerrarDetalles('detalles4')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="fila">
+
+        <div class="libro">
+         <img src="./img/El arte de ser nosotros.jpg" alt="El arte de ser nosotros">
+         <p><strong>El arte de ser nosotros</strong></p>
+         <button onclick="mostrarDetalles('detalles5')">Ver Detalles</button>
+         <div id="detalles5" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/El arte de ser nosotros.jpg" alt="El arte de ser nosotros" class="detalles-img">
+                 <div class="info">
+                     <h3>El arte de ser nosotros</h3>
+                     <p><strong>Autor:</strong>Inma Rubiales</p>
+                     <p><strong>Precio:</strong> $439 MXN</p>
+                     <button onclick="cerrarDetalles('detalles5')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+
+        <p>
+        <br>
+
+        <div class="libro">
+         <img src="./img/El jardin de las mariposas.jpg" alt="El jardin de las mariposas">
+         <p><strong>El jardin de las mariposas</strong></p>
+         <button onclick="mostrarDetalles('detalles6')">Ver Detalles</button>
+         <div id="detalles6" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/El jardin de las mariposas.jpg" alt="El jardin de las mariposas" class="detalles-img">
+                 <div class="info">
+                     <h3>El jardin de las mariposas</h3>
+                     <p><strong>Autor:</strong>Dot Hutchison</p>
+                     <p><strong>Precio:</strong> $439 MXN</p>
+                     <button onclick="cerrarDetalles('detalles6')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="fila">
+
+        <div class="libro">
+         <img src="./img/El libro de Bill.jpg" alt="El libro de Bill">
+         <p><strong>El libro de Bill</strong></p>
+         <button onclick="mostrarDetalles('detalles7')">Ver Detalles</button>
+         <div id="detalles7" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/El libro de Bill.jpg" alt="El libro de Bill" class="detalles-img">
+                 <div class="info">
+                     <h3>El libro de Bill</h3>
+                     <p><strong>Autor:</strong>Alex Hirsch</p>
+                     <p><strong>Precio:</strong> $405 MXN</p>
+                     <button onclick="cerrarDetalles('detalles7')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+
+        <p>
+        <br>
+
+        <div class="libro">
+         <img src="./img/En agosto nos vemos.jpg" alt="En agosto nos vemos">
+         <p><strong>En agosto nos vemos</strong></p>
+         <button onclick="mostrarDetalles('detalles8')">Ver Detalles</button>
+         <div id="detalles8" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/En agosto nos vemos.jpg" alt="En agosto nos vemos" class="detalles-img">
+                 <div class="info">
+                     <h3>En agosto nos vemos</h3>
+                     <p><strong>Autor:</strong>Gabriel García Márquez</p>
+                     <p><strong>Precio:</strong> $383 MXN</p>
+                     <button onclick="cerrarDetalles('detalles8')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="fila">
+        
+        <div class="libro">
+         <img src="./img/Este dolor no es mio.jpg" alt="Este dolor no es mio">
+         <p><strong>Este dolor no es mio</strong></p>
+         <button onclick="mostrarDetalles('detalles9')">Ver Detalles</button>
+         <div id="detalles9" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/Este dolor no es mio.jpg" alt="Este dolor no es mio" class="detalles-img">
+                 <div class="info">
+                     <h3>Este dolor no es mio</h3>
+                     <p><strong>Autor:</strong>Mark Wolynn</p>
+                     <p><strong>Precio:</strong> $435 MXN</p>
+                     <button onclick="cerrarDetalles('detalles9')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+
+        <p>
+        <br>
+
+        <div class="libro">
+         <img src="./img/Habitos atomicos.jpg" alt="Habitos atomicos">
+         <p><strong>Habitos atomicos</strong></p>
+         <button onclick="mostrarDetalles('detalles10')">Ver Detalles</button>
+         <div id="detalles10" class="detalles">
+             <div class="detalles-contenedor">
+                 <img src="./img/Habitos atomicos.jpg" alt="Habitos atomicos" class="detalles-img">
+                 <div class="info">
+                     <h3>Habitos atomicos</h3>
+                     <p><strong>Autor:</strong>James Clear</p>
+                     <p><strong>Precio:</strong> $439 MXN</p>
+                     <button onclick="cerrarDetalles('detalles10')">Cerrar</button>
+                 </div>
+             </div>
+          </div>
+        </div>
+    </div>
+
+    </section>
+<br>
+    <section class="promo">
+        <h2>Descubrir una nueva librería era como descubrir un nuevo tipo de gema preciosa: estimulante, maravillosa y un toque surrealista</h2>
+        <p>~Jules Ambrose</p>
+    </section>
+</br>
+<div class="categorias">
+    <div class="categoria" id="mas-vendidos">
+        <h2>Más Vendidos</h2>
+        <img src="./img/lo mas vendido.jpg" alt="Más Vendidos" class="categoria-img">
+        <div class="contenedor-libros"></div>
+    </div>
+
+    <div class="categoria" id="juveniles">
+        <h2>Juveniles</h2>
+        <img src="img/juveniles.jpg" alt="Libros Juveniles" class="categoria-img">
+        <div class="contenedor-libros"></div>
+    </div>
+
+    <div class="categoria" id="peques">
+        <h2>Libros para Peques</h2>
+        <img src="./img/peques.jpg" alt="Libros para Peques" class="categoria-img">
+        <div class="contenedor-libros"></div>
+    </div>
+
+    <div class="categoria" id="interes">
+        <h2>Interés Gral</h2>
+        <img src="./img/interes g.jpg" alt="interes" class="categoria-img">
+        <div class="contenedor-libros"></div>
+    </div>
+</div>
+
+    <script src="libreria"></script>
+
+     <script>
+     let detallesAbierto = null;
+
+     function mostrarDetalles(id) {
+         if (detallesAbierto !== null) return;
+         detallesAbierto = document.getElementById(id);
+         detallesAbierto.style.display = "block";
+         document.body.classList.add("fondo-blur");
+        }
+
+     function cerrarDetalles(id) {
+         document.getElementById(id).style.display = "none"; 
+         detallesAbierto = null;
+         document.body.classList.remove("fondo-blur");
+        }
+    </script>
+
+    <p>
+    <br>
+
+</body>
+</html>
